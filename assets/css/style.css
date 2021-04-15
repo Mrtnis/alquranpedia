@@ -1,0 +1,113 @@
+
+/* navbar */
+.navbar-brand{
+    font-family: Viga;
+    font-size: 32px;
+}
+.search{
+    border-radius: 30px;
+}
+/* jumbotron */
+.jumbotron{
+    height: 180px;
+    position: relative;
+    z-index:1;
+    overflow:hidden;
+}
+.jumbotron:before{
+    z-index:-1;
+    position:absolute;
+    content: url('../img/bg-quran.jpg');
+    opacity:0.4;
+    margin-top: -70px;
+    margin-left: -30px;
+}
+.jumbotron .container .lead{
+    margin-top: 20px;
+}
+.menu_baru{
+    background-image: url(../img/Alquran_wood.jpg);
+    background-size: 1200px;
+    background-position-x: -230px;
+}
+.pencarian{
+    margin-top:50%;
+}
+
+.caricari{
+    margin-top: 5%;
+}
+/* tampilan surat */
+
+
+/* info panel */
+.info-panel {
+    border-radius: 12px;
+    background-color:white;
+    padding: 30px;
+}
+.bebas{
+    margin-bottom: 20px;
+}
+
+.info-panel h3{
+    height: 70px;
+    width: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.info-panel p{
+    font-size: 15px;
+    color: #ACACAC;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+/* tampil ayat */
+
+/* Desktop */
+@media (min-width: 992px) {
+    
+    .search{
+        margin-left: 10px;
+        width: 280px !important;
+    }
+
+    .balik{
+        display: none;
+    }
+
+    .menu_baru{
+        background-image: url(../img/Alquran_wood.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+    }
+
+    .pencarian{
+        margin-top:20%;
+    }
+
+    .caricari{
+        margin-top: 4%;
+    }
+
+    .jumbotron{
+        height: 280px;
+    }
+    .jumbotron:before{
+        margin-top: -60px;
+        margin-left: 55%;
+    }
+    .jumbotron .container .lead{
+        margin-top: 40px;
+    }
+}
